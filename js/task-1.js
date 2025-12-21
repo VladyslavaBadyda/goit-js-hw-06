@@ -17,7 +17,7 @@ const customer = {
     return this.orders;
   },
   addOrder(cost, order) {
-    const finalPrice = cost * (1 - this.#discount);
+    const finalPrice = cost * (1 - this.discount);
     this.balance -= finalPrice;
     this.orders.push(order);
   },
